@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "build": "cd frontend && ng build --configuration production",
     "start:server": "node index.js",
     "start:frontend": "cd frontend && ng build --configuration production && ng serve",
     "start": "concurrently \"npm run start:server\" \"npm run start:frontend\"",
